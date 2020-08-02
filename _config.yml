@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: BugaBash
+title: BugaBash 2020
 url: "https://bugabash.com"
 baseurl:
 google_analytics_key:
@@ -20,6 +20,7 @@ social:
   name: BugaBash
   links:
     - https://bugabash.com
+contact_email: awbuga@gmail.com
 
 # -----
 # Build
