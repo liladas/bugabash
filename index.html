@@ -3,7 +3,7 @@ title: BugaBash 2020
 start_datetime: 2020-08-15 11:00:00
 end_datetime: 2020-08-15 24:00:00
 timezone: America/Los_Angeles
-description: A fun filled day with friends, food, and fun.
+description: A fun filled day with friends, food, and sun.
 background_image: /uploads/instagram/party.jpg
 map:
   address: 17563 Avenida Peregrina Rancho Santa Fe
@@ -41,11 +41,12 @@ _options:
 <p class="success">Message sent, we'll be in touch soon.</p>
 
 <p class="dates">
-	{{ page.start_datetime | date: "%A %B %-d %Y" }}
-  </br>
-	{{ page.start_datetime | date: "%-I%P" }} - {{ page.end_datetime | date: "%-I%P" }}
 	<span class="addtocalendar atc-style-button-icon atc-style-menu-wb">
-		<a class="atcb-link">{% include icons/date.svg %}</a>
+		<a class="atcb-link">
+			{{ page.start_datetime | date: "%A %B %-d %Y" }}
+     </br>
+    	{{ page.start_datetime | date: "%-I%P" }} - {{ page.end_datetime | date: "%-I%P" }}
+	{% include icons/date.svg %}</a>
 		<var class="atc_event">
 			<var class="atc_date_start">{{ page.start_datetime | date: "%Y-%m-%d %H:%M:%S" }}</var>
 			<var class="atc_date_end">{{ page.end_datetime | date: "%Y-%m-%d %H:%M:%S" }}</var>
