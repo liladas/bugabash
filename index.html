@@ -4,7 +4,7 @@ start_datetime: 2020-08-15 11:00:00
 end_datetime: 2020-08-15 24:00:00
 timezone: America/Los_Angeles
 description: A fun filled day with friends, food, and fun.
-background_image: /uploads/2015/12.jpeg
+background_image: /uploads/instagram/party.jpg
 map:
   address: 17563 Avenida Peregrina Rancho Santa Fe
   zoom: 16
@@ -61,23 +61,24 @@ _options:
 
 <h3 class="editable">Get your tickets</h3>
 <p class="editable">Using EventBrite to get tickets is totally optional, but you if you do it'll help me track the RSVP list.</p>
-<p class="editable">Also, anyone that does give bring a ticket will be entered into a raffle and also issued an collectible blockchain NFT after the party</p>
+<p class="editable">A ticket will enter you into a raffle</p>
+<p class="editable">Use your ticket to claim an Blockchain NFT after the party</p>
 {{ site.eventbrite_embed }}
 
 
-<h3 class="editable">Where it's at</h3>
+<h3 class="editable">where it's at</h3>
 <address><a href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{% include icons/place.svg %} {{ page.map.address }}</a></address>
 <div class="map" id="gmap_canvas"></div>
 
 
-<h3 class="editable">Photos from prior years</h3>
+<h3 class="editable">photos from past the past</h3>
 <div class="grid">
 	{% for photo in page.photos %}
 		<div class="grid-item"><a class="fancybox" rel="group" href="{% include relative-src.html src=photo.image %}"><img src="{% include relative-src.html src=photo.image %}" alt="{{ photo.title }}"/></a></div>
 	{% endfor %}
 </div>
 
-<h3 class="editable">Share this event with a friend.</h3>
+<h3 class="editable">Share this event with friends</h3>
 <em>(nice people only please)</em></p>
 <div class="sharing">
 	{% assign share_url = page.url | absolute_url | cgi_escape %}

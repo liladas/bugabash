@@ -11,7 +11,7 @@ timezone: Etc/PST
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: BugaBash
+description: BugaBash 2020 Event Details
 author:
   name: Adam Buga
   email: awbuga@gmail.com
